@@ -5,37 +5,52 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="row">
-      <div class="col">
-        <h1>Cadastre-se</h1>
-        <form action="cad.php" method="POST">
+    <div class="coluna">
+      <div class="linha">
+        <h1>Bootstrap demo</h1>
+        <form action="cad.php" method="post">
           <div class="mb-3">
             <label for="nome" class="form-label">Nome Completo</label>
             <input type="text" class="form-control" name="nome">
+
+
+            <label for="endereco" class="form-label">Endereço</label>
+            <input type="text" class="form-control" name="endereco">
+
+
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="text" class="form-control" name="telefone">
+
+
+            <label for="data" class="form-label">Data de Nascimento</label>
+            <input type="date" class="form-control" name="data">
 
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control" name="email">
 
             <label for="senha" class="form-label">Senha</label>
-            <input type="password" class="form-control" name="senha">
+            <input type="password" class="form-control" name="senha"> <br>
 
             <input type="submit" class="btn btn-success">
 
+
           </div>
+
+        </form>
+        <a href="index.php" class=" btn btn-info">Voltar ao Inicio</a>
+
+
+
+
       </div>
+
     </div>
   </div>
-
-
-
-
-
-
 
 
 
